@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/kimoandroid/GlideSlider.svg)](https://jitpack.io/#kimoandroid/GlideSlider)
+[![](https://jitpack.io/v/kimoandroid/glide-slider.svg)](https://jitpack.io/#kimoandroid/glide-slider)
 
  
 ## Screenshot
