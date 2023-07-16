@@ -3,7 +3,7 @@
 
  
 ## Screenshot
-<img src="https://github.com/kimoandroid/GlideSlider/assets/69405523/360ee3f8-e120-483d-8ba9-97ee96893b1b" width=420/>
+<img src="https://github.com/kimoandroid/glide-slider/assets/69405523/c5e75326-d524-45e2-b9da-4ec212a628c0" width=420/>
 
 ## Example App
 [https://github.com/kimoandroid/GlideSlider/tree/master/app](https://github.com/kimoandroid/GlideSlider/tree/master/app)
