@@ -66,7 +66,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.kimoandroid'
             artifactId = 'glide-slider'
-            version = '1.6'
+            version = '1.0'
 
             afterEvaluate {
                 from components.release
