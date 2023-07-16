@@ -13,7 +13,7 @@
 add this line into your `build.gradle` app.
 ```gradle
 dependencies {
-    implementation "com.github.kimoandroid:GlideSlider:1.6"
+    implementation "com.github.kimoandroid:glide-slider:1.0"
 }
 ```
 
