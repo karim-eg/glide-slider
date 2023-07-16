@@ -160,6 +160,8 @@ override fun onStop() {
 
 #### Powered by [Encept Ltd](https://encept.co).
 
+#### * This Library Was Forked From: [https://github.com/firdausmaulan/GlideSlider](https://github.com/firdausmaulan/GlideSlider)
+
 <br><br><br>
 
 #### Optional
