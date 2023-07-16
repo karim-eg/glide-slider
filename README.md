@@ -6,7 +6,7 @@
 <img src="https://github.com/kimoandroid/glide-slider/assets/69405523/c5e75326-d524-45e2-b9da-4ec212a628c0" width=420/>
 
 ## Example App
-[https://github.com/kimoandroid/GlideSlider/tree/master/app](https://github.com/kimoandroid/GlideSlider/tree/master/app)
+[https://github.com/kimoandroid/glide-slider/tree/master/app](https://github.com/kimoandroid/glide-slider/tree/master/app)
 
 ## Usage
 
@@ -154,7 +154,7 @@ override fun onStop() {
 
 <br>
 
-#### now you've implemented slider library into your app if you want more advanced options you can take a look here: [ActivityWithImplementations](https://github.com/kimoandroid/GlideSlider/blob/master/app/src/main/java/co/encept/app/ActivityWithImplementations.kt)
+#### now you've implemented slider library into your app if you want more advanced options you can take a look here: [ActivityWithImplementations](https://github.com/kimoandroid/glide-slider/blob/master/app/src/main/java/co/encept/app/ActivityWithImplementations.kt)
 
 #### That's All don't forget to star the project & fork if you want to develop the library.
 
