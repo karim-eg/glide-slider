@@ -1,5 +1,15 @@
+# Android Glide Slider Library
+#### Create a slider view inside your app without viewpager or complex adapters.
+
+
 [![](https://jitpack.io/v/kimoandroid/glide-slider.svg)](https://jitpack.io/#kimoandroid/glide-slider)
 [![](https://jitci.com/gh/kimoandroid/glide-slider/svg)](https://jitci.com/gh/kimoandroid/glide-slider)
+[![Build](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml/badge.svg)](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml)
+
+
+[![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
+[![Discord](https://img.shields.io/discord/954020097381502976.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/ptz6VByDbv)
+
 
  
 ## Screenshot
@@ -235,3 +245,19 @@ colors.xml
     <color name="glide_slider_description_background_color">#77000000</color>
 </resources>
 ```
+
+
+# Repo Informations
+
+## Contributors
+<a href="https://github.com/kimoandroid/glide-slider/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kimoandroid/glide-slider" />
+</a>
+
+
+## Stargazers
+[![Stargazers repo roster for @kimoandroid/glide-slider](https://reporoster.com/stars/kimoandroid/glide-slider)](https://github.com/kimoandroid/glide-slider/stargazers)
+
+
+## Forkers
+[![Forkers repo roster for @kimoandroid/glide-slider](https://reporoster.com/forks/kimoandroid/glide-slider)](https://github.com/kimoandroid/glide-slider/network/members)
