@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/glide_slider_card_view"
+    style="@style/GlideSliderCardStyle">
+
+    <RelativeLayout
+        android:id="@+id/glide_slider_background"
+        style="@style/GlideSliderBackgroundStyle">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/glide_slider_image"
+            style="@style/GlideSliderImageStyle" />
+
+        <ProgressBar
+            android:id="@+id/glide_slider_loading_bar"
+            style="@style/GlideSliderLoadingStyle" />
+
+        <LinearLayout
+            android:id="@+id/glide_slider_description_layout"
+            style="@style/GlideSliderDescriptionBackgroundStyle">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/glide_slider_description"
+                style="@style/GlideSliderDescriptionTextStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'co.encept.slider'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 17
+        targetSdk 33
+        versionCode 1
+        versionName "1.6"
+        multiDexEnabled true
+
+        aarMetadata {
+            minCompileSdk = 17
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildToolsVersion '33.0.2'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "com.github.bumptech.glide:glide:4.15.1"
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.kimoandroid'
+            artifactId = 'GlideSlider'
+            version = '1.6'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}

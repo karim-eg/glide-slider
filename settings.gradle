@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://repo1.maven.org/maven2' }
+        maven { url 'https://mvnrepository.com/repos/central' }
+        maven { url = uri("https://storage.googleapis.com/r8-releases/raw") }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://repo1.maven.org/maven2' }
+        maven { url 'https://mvnrepository.com/repos/central' }
+        maven { url = uri("https://storage.googleapis.com/r8-releases/raw") }
+    }
+}
+rootProject.name = "app"
+include ':app'
+include ':slider'
