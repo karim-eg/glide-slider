@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         /**
-         * set slider animation see all Transformer animations at [com.glide.slider.library.SliderLayout.Transformer]
+         * set slider animation see all Transformer animations at [co.encept.slider.SliderLayout.Transformer]
          */
         mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Tablet)
         mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom)
