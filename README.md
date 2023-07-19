@@ -6,7 +6,7 @@
 [![](https://jitci.com/gh/kimoandroid/glide-slider/svg)](https://jitci.com/gh/kimoandroid/glide-slider)
 [![Build](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml/badge.svg)](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml)
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/kimoandroid/glide-slider)
-<img src="https://img.shields.io/github/repo-size/kimoandroid/glide-slider" alt="size"/>
+![Repo Size](https://img.shields.io/github/repo-size/kimoandroid/glide-slider)
 [![Lines Of Code](https://tokei.rs/b1/github/kimoandroid/glide-slider?category=code)](https://github.com/kimoandroid/glide-slider)
 
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
@@ -15,7 +15,7 @@
 
  
 ## Screenshot
-<img src="https://github.com/kimoandroid/glide-slider/assets/69405523/c5e75326-d524-45e2-b9da-4ec212a628c0" width=420/>
+<img src="https://github.com/kimoandroid/glide-slider/assets/69405523/adba3c99-aa4e-4fd1-9b7e-276cba0f475c" width=420/>
 
 ## Example App
 [https://github.com/kimoandroid/glide-slider/tree/master/app](https://github.com/kimoandroid/glide-slider/tree/master/app)
@@ -48,7 +48,7 @@ dependencies {
 ### Step 2
 Add this widget into your `xml` activity file
 ```xml
-<com.glide.slider.library.SliderLayout
+<co.encept.slider.SliderLayout
         android:id="@+id/slider"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -59,7 +59,7 @@ Add this widget into your `xml` activity file
 
 ### Step 3
 Add these permessions into your `AndroidManifest.xml` file
-```manifest
+```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 ```
@@ -69,17 +69,6 @@ Add these permessions into your `AndroidManifest.xml` file
 <br>
 
 ### Step 4
-Add the Slider to your layout:
-```xml
-<com.glide.slider.library.SliderLayout
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"/>
-```        
-
-<br>
-
-### Step 5
 Now Open Your activity and add `SliderLayout` at class level
 ```kotlin
 private lateinit var mDemoSlider: SliderLayout
@@ -87,7 +76,7 @@ private lateinit var mDemoSlider: SliderLayout
 
 <br>
 
-### Step 6
+### Step 5
 at `onCreate`, assign the sliderLayout that you just defined before
 
 just type the variable name and assign the slider from xml file by viewBinding or findViewById
@@ -97,7 +86,7 @@ mDemoSlider = binding.slider
 
 <br>
 
-### Step 7
+### Step 6
 at `onCreate`, Now let's add some item's to the slider.
 
 Define two ArrayLists the first one called `itemName`, the secondone called `itemUrl`.
@@ -120,7 +109,7 @@ itemName.add("GIF Format")
 
 <br>
 
-### Step 8
+### Step 7
 at `onCreate`, Add This Lines below the other code that you've added before
 ```kotlin
 val requestOptions = RequestOptions()
@@ -167,7 +156,7 @@ mDemoSlider.stopCyclingWhenTouch(false)
 
 <br>
 
-### Step 9
+### Step 8
 don't forget to close the sliderLayout cycle when activity stops to prevent a memory leak.
 ```kotlin
 override fun onStop() {
@@ -180,76 +169,20 @@ override fun onStop() {
 <br>
 
 #### Optional
-There are some default indicators. If you want to use a provided indicator:
- 
+> There are some default indicators. If you want to use a provided indicator:
+
 ```xml
-<com.glide.slider.library.indicators.PagerIndicator
+<co.encept.slider.indicators.PagerIndicator
         android:id="@+id/custom_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"/>
 ```
 
-You can customize this library via styles.xml or colors.xml
+#### You can also customize this library via:
+##### [styles.xml](https://github.com/kimoandroid/glide-slider/blob/master/slider/src/main/res/values/colors.xml)
+##### [colors.xml](https://github.com/kimoandroid/glide-slider/blob/master/slider/src/main/res/values/styles.xml)
 
-styles.xml
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
-
-    <style name="GlideSliderCardStyle" parent="Base.CardView">
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">match_parent</item>
-    </style>
-
-    <style name="GlideSliderBackgroundStyle">
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:background">@color/glide_slider_background_color</item>
-    </style>
-
-    <style name="GlideSliderImageStyle">
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">match_parent</item>
-    </style>
-
-    <style name="GlideSliderLoadingStyle" parent="Base.Widget.AppCompat.ProgressBar">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_centerInParent">true</item>
-    </style>
-
-    <style name="GlideSliderDescriptionBackgroundStyle">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:background">@color/glide_slider_description_background_color</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:minHeight">30dp</item>
-        <item name="android:orientation">vertical</item>
-        <item name="android:paddingLeft">10dp</item>
-        <item name="android:paddingRight">10dp</item>
-    </style>
-
-    <style name="GlideSliderDescriptionTextStyle" parent="android:Widget.TextView">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:textColor">@color/glide_slider_description_color</item>
-        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
-    </style>
-</resources>
-```
-
-colors.xml
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="glide_slider_background_color">#000000</color>
-    <color name="glide_slider_indicator_color">#FFFFFF</color>
-    <color name="glide_slider_description_color">#FFFFFF</color>
-    <color name="glide_slider_description_background_color">#77000000</color>
-</resources>
-```
 <br>
 
 #### now you've implemented slider library into your app if you want more advanced options you can take a look here: [ActivityWithImplementations](https://github.com/kimoandroid/glide-slider/blob/master/app/src/main/java/co/encept/app/ActivityWithImplementations.kt)

@@ -16,6 +16,7 @@ import android.widget.Toast
 import co.encept.app.databinding.ActivityMainBinding
 import co.encept.slider.SliderLayout
 import co.encept.slider.animations.DescriptionAnimation
+import co.encept.slider.slidertypes.DefaultSliderView
 import co.encept.slider.slidertypes.TextSliderView
 import com.bumptech.glide.request.RequestOptions
 
@@ -30,6 +31,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var mDemoSlider: SliderLayout
+    private lateinit var slider2: SliderLayout
+
+    private val itemName = ArrayList<String>()
+    private val itemUrl = ArrayList<String>()
 
 
     @SuppressLint("CheckResult")
@@ -41,18 +46,8 @@ class MainActivity : AppCompatActivity() {
 
         // =========================== Start Slider Codes =============================
 
-        val itemName = ArrayList<String>()
-        val itemUrl = ArrayList<String>()
-        // 1st item in the slider
-        itemUrl.add("https://www.revive-adserver.com/media/GitHub.jpg")
-        itemName.add("JPG Format")
-        // 2nd item in the slider
-        itemUrl.add("https://e7.pngegg.com/pngimages/519/64/png-clipart-black-laptop-computer-illustration-computer-programming-web-development-computer-software-programming-language-theme-coder-electronics-gadget.png")
-        itemName.add("PNG Format")
-        // 3rd item in the slider
-        itemUrl.add("https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif")
-        itemName.add("GIF Format")
-
+        // load items to slider
+        loadItems()
 
         /**
          * you can add regular LinearLayout at xml file and add SliderLayout to it programmatically like this code below
@@ -110,6 +105,8 @@ class MainActivity : AppCompatActivity() {
 
         // ========================= End Of Slider Codes ===========================
 
+        // load the second slider
+        secondSlider()
 
         binding.btnSec.setOnClickListener {
             startActivity(Intent(this, ActivityWithImplementations::class.java))
@@ -121,6 +118,55 @@ class MainActivity : AppCompatActivity() {
         super.onStop()
         // To prevent a memory leak on rotation, make sure to call stopAutoCycle() on the slider before activity or fragment is destroyed
         mDemoSlider.stopAutoCycle()
+    }
+
+    private fun loadItems() {
+        // 1st item in the slider
+        itemUrl.add(Consts.imgUrlJpg)
+        itemName.add("JPG Image Format")
+        // 2nd item in the slider
+        itemUrl.add(Consts.imgUrlPng)
+        itemName.add("PNG Image Format")
+        // 3rd item in the slider
+        itemUrl.add(Consts.imgUrlGif)
+        itemName.add("GIF Image Format")
+    }
+
+    private fun secondSlider() {
+        slider2 = binding.sliderWithoutText
+
+        val requestOptions = RequestOptions()
+        requestOptions.centerInside()
+
+        for (pos in itemUrl.indices) {
+            val sliderView2 = DefaultSliderView(this)
+
+            sliderView2
+                .image(itemUrl[pos])
+                .description(itemName[pos])
+                .setRequestOption(requestOptions)
+                .setProgressBarVisible(true)
+
+                .setOnSliderClickListener { slider ->
+                    // TODO: Add your click listener implementation here.
+                    runOnUiThread {
+                        Toast.makeText(this, "name: ${slider.bundle.getString("name")}\nurl: ${slider.bundle.getString("url")}",
+                            Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+            sliderView2.bundle(Bundle())
+            sliderView2.bundle.putString("name", itemName[pos])
+            sliderView2.bundle.putString("url", itemUrl[pos])
+            slider2.addSlider(sliderView2)
+        }
+
+        slider2.setPresetTransformer(SliderLayout.Transformer.Tablet)
+        slider2.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom)
+        slider2.setCustomAnimation(DescriptionAnimation())
+        slider2.setDuration(4000)
+        slider2.stopCyclingWhenTouch(false)
+
     }
 
 }

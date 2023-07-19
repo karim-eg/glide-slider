@@ -8,10 +8,10 @@
 package co.encept.app
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import co.encept.app.databinding.ActivityWithImplementationsBinding
 import co.encept.slider.SliderLayout
 import co.encept.slider.animations.DescriptionAnimation
@@ -19,7 +19,6 @@ import co.encept.slider.slidertypes.BaseSliderView
 import co.encept.slider.slidertypes.TextSliderView
 import co.encept.slider.tricks.ViewPagerEx
 import com.bumptech.glide.request.RequestOptions
-
 
 /**
  * This Is The Example Of Slider Library with all implementations.
@@ -49,14 +48,14 @@ class ActivityWithImplementations : AppCompatActivity(),
         val itemName = ArrayList<String>()
         val itemUrl = ArrayList<String>()
         // 1st item in the slider
-        itemUrl.add("https://www.revive-adserver.com/media/GitHub.jpg")
-        itemName.add("JPG Format")
+        itemUrl.add(Consts.imgUrlJpg)
+        itemName.add("JPG Image Format")
         // 2nd item in the slider
-        itemUrl.add("https://e7.pngegg.com/pngimages/519/64/png-clipart-black-laptop-computer-illustration-computer-programming-web-development-computer-software-programming-language-theme-coder-electronics-gadget.png")
-        itemName.add("PNG Format")
+        itemUrl.add(Consts.imgUrlPng)
+        itemName.add("PNG Image Format")
         // 3rd item in the slider
-        itemUrl.add("https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif")
-        itemName.add("GIF Format")
+        itemUrl.add(Consts.imgUrlGif)
+        itemName.add("GIF Image Format")
 
         val requestOptions = RequestOptions()
         requestOptions.centerInside()

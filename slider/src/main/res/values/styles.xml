@@ -39,6 +39,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:textColor">@color/glide_slider_description_color</item>
-        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 </resources>
