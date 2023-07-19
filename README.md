@@ -5,7 +5,9 @@
 [![](https://jitpack.io/v/kimoandroid/glide-slider.svg)](https://jitpack.io/#kimoandroid/glide-slider)
 [![](https://jitci.com/gh/kimoandroid/glide-slider/svg)](https://jitci.com/gh/kimoandroid/glide-slider)
 [![Build](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml/badge.svg)](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml)
-
+![GitHub release (with filter)](https://img.shields.io/github/v/release/kimoandroid/glide-slider)
+<img src="https://img.shields.io/github/repo-size/kimoandroid/glide-slider" alt="size"/>
+[![Lines Of Code](https://tokei.rs/b1/github/kimoandroid/glide-slider?category=code)](https://github.com/kimoandroid/glide-slider)
 
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 [![Discord](https://img.shields.io/discord/954020097381502976.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/ptz6VByDbv)
@@ -18,10 +20,23 @@
 ## Example App
 [https://github.com/kimoandroid/glide-slider/tree/master/app](https://github.com/kimoandroid/glide-slider/tree/master/app)
 
+<br>
+
 ## Usage
 
+
 ### Step 1
-add this line into your `build.gradle` app.
+> Add this line to root `build.gradle` at allprojects block code:
+```gradle
+allprojects {
+  repositories {
+   //...
+   maven { url 'https://jitpack.io' }
+  }
+ }
+ ```
+
+> then add this line into your `build.gradle` app level.
 ```gradle
 dependencies {
     implementation "com.github.kimoandroid:glide-slider:1.0"
@@ -164,16 +179,6 @@ override fun onStop() {
 
 <br>
 
-#### now you've implemented slider library into your app if you want more advanced options you can take a look here: [ActivityWithImplementations](https://github.com/kimoandroid/glide-slider/blob/master/app/src/main/java/co/encept/app/ActivityWithImplementations.kt)
-
-#### That's All don't forget to star the project & fork if you want to develop the library.
-
-#### Powered by [Encept Ltd](https://encept.co).
-
-#### * This Library Was Forked From: [https://github.com/firdausmaulan/GlideSlider](https://github.com/firdausmaulan/GlideSlider)
-
-<br><br>
-
 #### Optional
 There are some default indicators. If you want to use a provided indicator:
  
@@ -245,6 +250,16 @@ colors.xml
     <color name="glide_slider_description_background_color">#77000000</color>
 </resources>
 ```
+<br>
+
+#### now you've implemented slider library into your app if you want more advanced options you can take a look here: [ActivityWithImplementations](https://github.com/kimoandroid/glide-slider/blob/master/app/src/main/java/co/encept/app/ActivityWithImplementations.kt)
+
+#### That's All don't forget to star the project & fork if you want to develop the library.
+
+#### Powered by [Encept Ltd](https://encept.co).
+
+#### * This Library Was Forked From: [https://github.com/firdausmaulan/GlideSlider](https://github.com/firdausmaulan/GlideSlider)
+
 <br>
 
 ## Used by
