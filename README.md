@@ -172,7 +172,7 @@ override fun onStop() {
 
 #### * This Library Was Forked From: [https://github.com/firdausmaulan/GlideSlider](https://github.com/firdausmaulan/GlideSlider)
 
-<br><br><br>
+<br><br>
 
 #### Optional
 There are some default indicators. If you want to use a provided indicator:
@@ -245,15 +245,23 @@ colors.xml
     <color name="glide_slider_description_background_color">#77000000</color>
 </resources>
 ```
+<br>
+
+## Used by
+List of apps on Play Store where this library used. Contact me if you want your app listed.
 
 
-# Repo Informations
+Icon | Application
+------------ | -------------
+<img src="https://play-lh.googleusercontent.com/I0i7O7IBTeuRDwjogpu9W5LFZU2X4IMPSs7fCxUOT5sMrTsaJauaEJXYOJCxSPGkm_ps=w240-h480-rw" width="48" height="48" /> | [Coding Oasis - Learn Programming]
+
+<br>
 
 ## Contributors
 <a href="https://github.com/kimoandroid/glide-slider/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kimoandroid/glide-slider" />
 </a>
-
+<br>
 
 ## Stargazers
 [![Stargazers repo roster for @kimoandroid/glide-slider](https://reporoster.com/stars/kimoandroid/glide-slider)](https://github.com/kimoandroid/glide-slider/stargazers)
@@ -261,3 +269,7 @@ colors.xml
 
 ## Forkers
 [![Forkers repo roster for @kimoandroid/glide-slider](https://reporoster.com/forks/kimoandroid/glide-slider)](https://github.com/kimoandroid/glide-slider/network/members)
+
+
+
+[Coding Oasis - Learn Programming]:https://links.encept.co/co_github
