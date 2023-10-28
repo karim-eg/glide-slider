@@ -1,20 +1,24 @@
 # Android Glide Slider Library
 #### Create a slider view inside your app without viewpager or complex adapters.
 
-
+[![StandWithPalestine](https://raw.githubusercontent.com/kimoandroid/StandWithPalestine/main/assets/palestine_badge.svg)](https://github.com/kimoandroid/StandWithPalestine)
 [![](https://jitpack.io/v/kimoandroid/glide-slider.svg)](https://jitpack.io/#kimoandroid/glide-slider)
 [![](https://jitci.com/gh/kimoandroid/glide-slider/svg)](https://jitci.com/gh/kimoandroid/glide-slider)
 [![Build](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml/badge.svg)](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml)
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/kimoandroid/glide-slider)
+
 ![Repo Size](https://img.shields.io/github/repo-size/kimoandroid/glide-slider)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/839fd92cb64e410a977f0b4835a535f3)](https://app.codacy.com/gh/kimoandroid/glide-slider/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Lines Of Code](https://tokei.rs/b1/github/kimoandroid/glide-slider?category=code)](https://github.com/kimoandroid/glide-slider)
-
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 [![Discord](https://img.shields.io/discord/954020097381502976.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/ptz6VByDbv)
 
+<br>
 
- 
+[![StandWithPalestine](https://raw.githubusercontent.com/kimoandroid/StandWithPalestine/main/assets/palestine_banner.svg)](https://github.com/kimoandroid/StandWithPalestine/blob/main/Donate.md)
+
+<br>
+
 ## Screenshot
 <img src="https://github.com/kimoandroid/glide-slider/assets/69405523/adba3c99-aa4e-4fd1-9b7e-276cba0f475c" width=420/>
 
