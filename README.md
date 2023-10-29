@@ -19,6 +19,7 @@
 
 <br>
 
+
 ## Screenshot
 <img src="https://github.com/kimoandroid/glide-slider/assets/69405523/adba3c99-aa4e-4fd1-9b7e-276cba0f475c" width=420/>
 
