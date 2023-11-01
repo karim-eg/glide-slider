@@ -1,30 +1,30 @@
 # Android Glide Slider Library
 #### Create a slider view inside your app without viewpager or complex adapters.
 
-[![StandWithPalestine](https://raw.githubusercontent.com/kimoandroid/StandWithPalestine/main/assets/palestine_badge.svg)](https://github.com/kimoandroid/StandWithPalestine)
-[![](https://jitpack.io/v/kimoandroid/glide-slider.svg)](https://jitpack.io/#kimoandroid/glide-slider)
-[![](https://jitci.com/gh/kimoandroid/glide-slider/svg)](https://jitci.com/gh/kimoandroid/glide-slider)
-[![Build](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml/badge.svg)](https://github.com/kimoandroid/glide-slider/actions/workflows/android.yml)
-![GitHub release (with filter)](https://img.shields.io/github/v/release/kimoandroid/glide-slider)
+[![StandWithPalestine](https://raw.githubusercontent.com/karim-eg/StandWithPalestine/main/assets/palestine_badge.svg)](https://github.com/karim-eg/StandWithPalestine)
+[![](https://jitpack.io/v/karim-eg/glide-slider.svg)](https://jitpack.io/#karim-eg/glide-slider)
+[![](https://jitci.com/gh/karim-eg/glide-slider/svg)](https://jitci.com/gh/karim-eg/glide-slider)
+[![Build](https://github.com/karim-eg/glide-slider/actions/workflows/android.yml/badge.svg)](https://github.com/karim-eg/glide-slider/actions/workflows/android.yml)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/karim-eg/glide-slider)
 
-![Repo Size](https://img.shields.io/github/repo-size/kimoandroid/glide-slider)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/839fd92cb64e410a977f0b4835a535f3)](https://app.codacy.com/gh/kimoandroid/glide-slider/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-[![Lines Of Code](https://tokei.rs/b1/github/kimoandroid/glide-slider?category=code)](https://github.com/kimoandroid/glide-slider)
+![Repo Size](https://img.shields.io/github/repo-size/karim-eg/glide-slider)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/839fd92cb64e410a977f0b4835a535f3)](https://app.codacy.com/gh/karim-eg/glide-slider/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Lines Of Code](https://tokei.rs/b1/github/karim-eg/glide-slider?category=code)](https://github.com/karim-eg/glide-slider)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 [![Discord](https://img.shields.io/discord/954020097381502976.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/ptz6VByDbv)
 
 <br>
 
-[![StandWithPalestine](https://raw.githubusercontent.com/kimoandroid/StandWithPalestine/main/assets/palestine_banner.svg)](https://github.com/kimoandroid/StandWithPalestine/blob/main/Donate.md)
+[![StandWithPalestine](https://raw.githubusercontent.com/karim-eg/StandWithPalestine/main/assets/palestine_banner.svg)](https://github.com/karim-eg/StandWithPalestine/blob/main/Donate.md)
 
 <br>
 
 
 ## Screenshot
-<img src="https://github.com/kimoandroid/glide-slider/assets/69405523/adba3c99-aa4e-4fd1-9b7e-276cba0f475c" width=420/>
+<img src="https://github.com/karim-eg/glide-slider/assets/69405523/adba3c99-aa4e-4fd1-9b7e-276cba0f475c" width=420/>
 
 ## Example App
-[https://github.com/kimoandroid/glide-slider/tree/master/app](https://github.com/kimoandroid/glide-slider/tree/master/app)
+[https://github.com/karim-eg/glide-slider/tree/master/app](https://github.com/karim-eg/glide-slider/tree/master/app)
 
 <br>
 
@@ -45,7 +45,7 @@ allprojects {
 > then add this line into your `build.gradle` app level.
 ```gradle
 dependencies {
-    implementation "com.github.kimoandroid:glide-slider:1.0"
+    implementation "com.github.karim-eg:glide-slider:1.0"
 }
 ```
 
@@ -186,12 +186,12 @@ override fun onStop() {
 ```
 
 #### You can also customize this library via:
-##### [styles.xml](https://github.com/kimoandroid/glide-slider/blob/master/slider/src/main/res/values/colors.xml)
-##### [colors.xml](https://github.com/kimoandroid/glide-slider/blob/master/slider/src/main/res/values/styles.xml)
+##### [styles.xml](https://github.com/karim-eg/glide-slider/blob/master/slider/src/main/res/values/colors.xml)
+##### [colors.xml](https://github.com/karim-eg/glide-slider/blob/master/slider/src/main/res/values/styles.xml)
 
 <br>
 
-#### now you've implemented slider library into your app if you want more advanced options you can take a look here: [ActivityWithImplementations](https://github.com/kimoandroid/glide-slider/blob/master/app/src/main/java/co/encept/app/ActivityWithImplementations.kt)
+#### now you've implemented slider library into your app if you want more advanced options you can take a look here: [ActivityWithImplementations](https://github.com/karim-eg/glide-slider/blob/master/app/src/main/java/co/encept/app/ActivityWithImplementations.kt)
 
 #### That's All don't forget to star the project & fork if you want to develop the library.
 
@@ -212,17 +212,17 @@ Icon | Application
 <br>
 
 ## Contributors
-<a href="https://github.com/kimoandroid/glide-slider/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kimoandroid/glide-slider" />
+<a href="https://github.com/karim-eg/glide-slider/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=karim-eg/glide-slider" />
 </a>
 <br>
 
 ## Stargazers
-[![Stargazers repo roster for @kimoandroid/glide-slider](https://reporoster.com/stars/kimoandroid/glide-slider)](https://github.com/kimoandroid/glide-slider/stargazers)
+[![Stargazers repo roster for @karim-eg/glide-slider](https://reporoster.com/stars/karim-eg/glide-slider)](https://github.com/karim-eg/glide-slider/stargazers)
 
 
 ## Forkers
-[![Forkers repo roster for @kimoandroid/glide-slider](https://reporoster.com/forks/kimoandroid/glide-slider)](https://github.com/kimoandroid/glide-slider/network/members)
+[![Forkers repo roster for @karim-eg/glide-slider](https://reporoster.com/forks/karim-eg/glide-slider)](https://github.com/karim-eg/glide-slider/network/members)
 
 
 
