@@ -8,7 +8,7 @@
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/karim-eg/glide-slider)
 
 ![Repo Size](https://img.shields.io/github/repo-size/karim-eg/glide-slider)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/839fd92cb64e410a977f0b4835a535f3)](https://app.codacy.com/gh/karim-eg/glide-slider/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6b6ab00686aa4c2686fa95276ba2845a)](https://app.codacy.com/gh/karim-eg/glide-slider/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Lines Of Code](https://tokei.rs/b1/github/karim-eg/glide-slider?category=code)](https://github.com/karim-eg/glide-slider)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 [![Discord](https://img.shields.io/discord/954020097381502976.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/ptz6VByDbv)
